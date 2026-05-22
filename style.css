@@ -402,9 +402,18 @@ section { padding: 140px 0; position: relative; z-index: 1; }
 
 .tech-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: auto; }
 .tech-tag {
+  display: inline-flex; align-items: center; gap: 8px;
   padding: 8px 16px; background: rgba(255,255,255,0.03);
   border: 1px solid rgba(255,255,255,0.05); border-radius: 50px;
   font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: var(--text-primary);
+  transition: var(--transition);
+}
+.tech-tag:hover {
+  background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15);
+  transform: translateY(-2px);
+}
+.tech-icon {
+  width: 18px; height: 18px; object-fit: contain;
 }
 
 /* ===== Projects (Bento Style) ===== */
